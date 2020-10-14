@@ -19,6 +19,7 @@ html {
 
 .bg-section {
 	background-color: lightgray;
+	padding: 1rem;
 }
 
 .bg-aside {
