@@ -2,7 +2,7 @@
 
 ### Balises inline, block
 
-Un des premiers concepts à maîtriser quand on parle d’HTML est le « type d’affichage » *inline *ou *block *(nous ne parlerons pas des autres types minoritaires, table-cell, inline-block etc).
+Un des premiers concepts à maîtriser quand on parle d’HTML est le « type d’affichage » *inline* ou *block* (nous ne parlerons pas des autres types minoritaires, table-cell, inline-block etc).
 
 Voici quelques exemples des balises couramment utilisés.
 
@@ -21,11 +21,11 @@ Balises inline :
 *   em
 *   img
 
-Alors qu’elle est la différence entre une balise *block *et *inline *?
+Alors qu’elle est la différence entre une balise *block* et *inline* ?
 
-*block *: une balise de type block crée automatiquement un retour à la ligne (clear) avant et après, on imagine alors facilement un véritable « bloc » qui délimite une zone (`article`, `header`, `footer` etc). Vous le comprenez, un site est constitué de plusieurs de ces blocks, imbriqués les uns dans les autres dans lesquels ont imbrique des contenus textuel, images, etc.
+*block*: une balise de type block crée automatiquement un retour à la ligne (clear) avant et après, on imagine alors facilement un véritable « bloc » qui délimite une zone (`article`, `header`, `footer` etc). Vous le comprenez, un site est constitué de plusieurs de ces blocks, imbriqués les uns dans les autres dans lesquels ont imbrique des contenus textuel, images, etc.
 
-*inline *: une balise de type inline se trouve **obligatoirement ** à l’intérieur d’une balise block. Une balise inline ne crée pas de retour à la ligne, le texte qui se trouve à l’intérieur s’écrit donc à la suite du texte précédent, sur la même ligne.
+*inline*: une balise de type inline se trouve **obligatoirement** à l’intérieur d’une balise block. Une balise inline ne crée pas de retour à la ligne, le texte qui se trouve à l’intérieur s’écrit donc à la suite du texte précédent, sur la même ligne.
 
 La **mauvaise pratique** que l’on dénonce ici est l’utilisation d’une balise *block* à l’intérieur d’une balise *inline* (à l’exception de l’élément `a` qui peut envelopper n’importe quel type de contenu, *block* comme *inline*.)
 
@@ -42,11 +42,11 @@ Voici une petite liste des différences :
 
 La **mauvaise pratique** ici, est l’utilisation d’une balise sans prendre en compte ses comportements natifs, il est inutile par exemple de définir `width:100%` sur une balise de type block, car elle adopte par défaut ce comportement.
 
-Pour généraliser, les éléments *block* sont **structurels **alors que les éléments *inline* sont relatifs au **texte**.
+Pour généraliser, les éléments *block* sont **structurels** alors que les éléments *inline* sont relatifs au **texte**.
 
 ### Balises fortement typés (html5)
 
-Avec HTML5, de nouvelles balises ont été mis en place, afin de rendre le web plus **typé** sémantiquement et donc plus **compréhensible **par l’homme/machine. Il peut être difficile depuis de savoir quelle balise utilisée à quel moment et avec quel contenu.
+Avec HTML5, de nouvelles balises ont été mis en place, afin de rendre le web plus **typé** sémantiquement et donc plus **compréhensible** par l’homme/machine. Il peut être difficile depuis de savoir quelle balise utilisée à quel moment et avec quel contenu.
 
 Voici un schéma qui peut aider dans la prise de décision:
 
@@ -65,7 +65,7 @@ Voici un exemple de site développé avec ses nouvelles balises :
 
 ![site](https://user.oc-static.com/files/343001_344000/343677.png)
 
-La** bonne pratique** mise en lumière ici, est de **typer** votre site au maximum. Vous avez de nouvelles armes, correspondant à des **situations **précises, il faut les utiliser.
+La **bonne pratique** mise en lumière ici, est de **typer** votre site au maximum. Vous avez de nouvelles armes, correspondant à des **situations** précises, il faut les utiliser.
 
 Fini le temps des sites composés uniquement de `div`, désormais, on utilise directement la balise qu’il nous faut.
 
@@ -77,7 +77,7 @@ Voici une liste non-exhaustive de quelques balises à bannir/limiter au profit d
 
 *   basefont: autrefois utilisé pour définir les polices.Aujourd’hui, on préférera déclarer les polices dans le CSS.
 *   center: autrefois utilisé pour centrer les textes. Aujourd’hui, on préférera centrer dans le CSS.
-*   l’ancienne balise menu: autrefois utilisé pour déclarer un menu de navigation. Aujourd’hui, on préférera utiliser des `UL`, `LI` à la place. (/!\ depuis HTML 5 **menu **est réimplanté** **avec une signification différente => Menu contextuel).
+*   l’ancienne balise menu: autrefois utilisé pour déclarer un menu de navigation. Aujourd’hui, on préférera utiliser des `UL`, `LI` à la place. (/!\ depuis HTML 5 **menu** est réimplanté** **avec une signification différente => Menu contextuel).
 
 Quelques cas spéciaux :
 
@@ -99,11 +99,13 @@ Afin de faciliter la lecture du code, l’ordre suivant des attributs est à pri
 *   title, alt
 *   role, aria-*
 
-Les **class **sont des composants **réutilisables**, ils doivent donc apparaître en premier et être choisis en priorité pour sélectionner nos éléments (écrire le maximum de code réutilisable étant une bonne pratique globale dans n’importe quel langage). Les **Id **sont plus spécifiques et doivent donc être utilisés moins souvent (ex: Ancre, Script JS, etc). Viens ensuite **data** qui permet d’étendre les informations de notre élément, puis les attributs **type, source, value** qui aide à identifier le contenu (normalement déjà explicite avec le nom de **class, name** etc).
+Les **class** sont des composants **réutilisables**, ils doivent donc apparaître en premier et être choisis en priorité pour sélectionner nos éléments (écrire le maximum de code réutilisable étant une bonne pratique globale dans n’importe quel langage). Les **id** sont plus spécifiques et doivent donc être utilisés moins souvent (ex: Ancres, Script JS, etc). Viens ensuite **data** qui permet d’étendre les informations de notre élément, puis les attributs **type, source, value** qui aide à identifier le contenu (normalement déjà explicite avec le nom de **class, name** etc).
 
 **exemple:**
 
-![html](https://i1.wp.com/img4.hostingpics.net/pics/72964453.png)
+![html](https://res.cloudinary.com/dktpygkcf/image/upload/v1602656100/codingfactory/Screenshot_2020-10-14_at_08.14.41_hafclk.png)
+
+![html](https://res.cloudinary.com/dktpygkcf/image/upload/v1602656102/codingfactory/Screenshot_2020-10-14_at_08.14.23_mfnkeb.png)
 
 ### Règles diverses
 
@@ -114,7 +116,7 @@ Je vais lister pour finir quelques bonnes pratiques qui peuvent paraître évide
 *   Faite une déclaration spécial **IE**, `[if lt IE 7]` pour la gestion de style particulier
 *   Utiliser **modernizr**, pour augmenter la capacité des navigateurs de vos visiteurs et rendre vos balises compatibles
 *   Renseigner les attributs **alt **de toutes vos images pour l’accessibilité et le SEO
-*   Respecter/Utiliser les **balises de titre **(*h1 jusqu’à h6*), elles sont un des éléments les plus important après la balise *title (de page) *pour le SEO
+*   Respecter/Utiliser les **balises de titre** (*h1 jusqu’à h6*), elles sont un des éléments les plus important après la balise *title (de page) *pour le SEO
 *   Déclaré, les fichiers CSS au début du document, le JS à la fin du document pour des soucis de **performances**
 
 Voilà pour les quelques règles faciles à mettre en place dans un projet, qui permettent d’avoir une meilleure :
@@ -131,7 +133,7 @@ Quand on parle de CSS, on ne peut s’empêcher de penser à des documents inter
 
 ### Spécificité
 
-Les sélecteurs sont des variables globales **mutables**. Elles sont donc écrasées suivant **l’ordre **de déclaration, mais aussi suivant la **spécificité**.
+Les sélecteurs sont des variables globales **mutables**. Elles sont donc écrasées suivant **l’ordre** de déclaration, mais aussi suivant la **spécificité**.
 
 ![html](https://i0.wp.com/img11.hostingpics.net/pics/872638speci.png)
 
@@ -143,7 +145,7 @@ Ensuite, on voit que « coucou 2 » est de couleur bleue, en effet il à une cla
 
 Enfin, le « coucou 3 » est en noir, car la fourberie de CSS est d’accorder plus d’importance, quoi qu’il arrive, à une propriété **directement **déclarée dans l’élément.
 
-La spécificité étant un point assez difficile à intégrer, je vous laisse un article en guise de référence : [Developer-Moz](https://developer.mozilla.org/fr/Apprendre/CSS/Les_bases/La_cascade_et_l_h%C3%A9ritage)
+La spécificité étant un point assez difficile à intégrer, je vous laisse un article en guise de référence : [Developer-Mozilla](https://developer.mozilla.org/fr/Apprendre/CSS/Les_bases/La_cascade_et_l_h%C3%A9ritage)
 
 ### Nom de classes
 
@@ -173,7 +175,7 @@ Afin d’obtenir un design « fluid », on évite d’utiliser les unités de va
 
 Ainsi, peu importe la taille de police par défaut dans le navigateur, ou la taille de l’écran, vos blocs et polices feront toujours la même taille (proportionnellement au reste du site), 1% restant toujours 1/100 = 0,01.
 
-Je rajouterais même une combinaison des deux pratiques, après avoir définis une `font-size` dans la balise `HTML` (en px) utiliser `rem` pour les balises de type block (aside, article etc) et `em` pour les balises de type inline (h2, p etc). Ainsi, chaques élément conteneur est compartimenté et fluid.
+Une combinaison des deux pratiques, après avoir définis une `font-size` dans la balise `HTML` (en px) utiliser `rem` pour les balises de type block (aside, article etc) et `em` pour les balises de type inline (h2, p etc). Ainsi, chaques élément conteneur est compartimenté et fluid.
 
 > Et après ?
 
@@ -194,15 +196,13 @@ Comme dans tout langage de programmation, il est de plus en plus commun et souha
 
 Un exemple simple avec des boutons :
 
-![factorisation](https://i0.wp.com/img11.hostingpics.net/pics/293974Factoriser.png)
+![factorisation](https://res.cloudinary.com/dktpygkcf/image/upload/v1602655879/codingfactory/Screenshot_2020-10-14_at_08.10.54_zliqei.png)
 
 une fois factorisé, afin d’éviter la redondance, on créé une class commune à nos boutons afin de regrouper les attributs partagés.
 
-![factorisation](https://i0.wp.com/img11.hostingpics.net/pics/659978Factoriser2.png)
-
 Et si on veut allez plus loin, on sépare la structure de l’apparence pour rendre le code encore plus factorisable à l’avenir.
 
-![factorisation](https://i1.wp.com/img11.hostingpics.net/pics/654859factoriser3.png)
+![factorisation](https://res.cloudinary.com/dktpygkcf/image/upload/v1602655661/codingfactory/Screenshot_2020-10-14_at_08.07.05_b8wxk5.png)
 
 Grâce à cette méthode, on gagne en lisibilité, en performance, mais aussi en maintenabilité.
 
@@ -255,4 +255,4 @@ Si après cet article, vous avez encore envie de creuser un peu plus le sujet, j
 *   Vérifier que notre CSS et HTML seront correctement interprétés : [canisuse.com](http://caniuse.com/).
 *   Utiliser [CSSreset](http://cssreset.com/) pour ne plus blâmer les navigateurs quand son design foire.
 
-Et **surtout**,** **continuer à faire de la **veille**, que ce soit sur des nouvelles technos, des anciennes, ou des technos considérées comme « facile » il y a toujours de nouvelles pratiques à maîtriser.
+Et **surtout**, **continuer** à faire de la **veille**, que ce soit sur des nouvelles technos, des anciennes, ou des technos considérées comme « facile » il y a toujours de nouvelles pratiques à maîtriser.
