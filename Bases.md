@@ -135,7 +135,7 @@ Quand on parle de CSS, on ne peut s’empêcher de penser à des documents inter
 
 Les sélecteurs sont des variables globales **mutables**. Elles sont donc écrasées suivant **l’ordre** de déclaration, mais aussi suivant la **spécificité**.
 
-![html](https://i0.wp.com/img11.hostingpics.net/pics/872638speci.png)
+[Un article "coup de gueule" sur le CSS, parlant de la spécificité - A LIRE](https://putaindecode.io/articles/pourquoi-j-ai-arrete-d-utiliser-css/)
 
 Suivant cet exemple, nous pouvons voir que la spécificité en CSS est une des notions les plus importantes, mais aussi les plus pénibles à comprendre.
 

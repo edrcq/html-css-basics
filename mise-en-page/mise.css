@@ -1,0 +1,34 @@
+html {
+	font-size: 18px;
+	color: darkgreen;
+}
+
+.container {
+	max-width: 800px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.bg-header {
+	background-color: burlywood;
+}
+
+.bg-nav {
+	background-color: lightblue;
+}
+
+.bg-section {
+	background-color: lightgray;
+}
+
+.bg-aside {
+	background-color: rgb(219, 55, 55);
+}
+
+.bg-article {
+	background-color: cornflowerblue;
+}
+
+.bg-footer {
+	background-color: lightgreen;
+}
